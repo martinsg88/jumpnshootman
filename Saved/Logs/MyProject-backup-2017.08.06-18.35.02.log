@@ -1,0 +1,746 @@
+﻿Log file open, 08/06/17 11:08:17
+LogInit:Display: Running engine for game: MyProject
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(997763483) SRandInit(997763483).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.111567
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.08.06-02.08.18:016][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.06-02.08.18:016][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.08.06-02.08.18:078][  0]LogInit: Computer: DESKTOP-U7D5BE0
+[2017.08.06-02.08.18:078][  0]LogInit: User: gmar
+[2017.08.06-02.08.18:078][  0]LogInit: CPU Page size=4096, Cores=2
+[2017.08.06-02.08.18:078][  0]LogInit: High frequency timer resolution =2.343754 MHz
+[2017.08.06-02.08.18:079][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.08.06-02.08.18:079][  0]LogMemory: Platform Memory Stats for Windows
+[2017.08.06-02.08.18:079][  0]LogMemory: Process Physical Memory: 272.93 MB used, 272.93 MB peak
+[2017.08.06-02.08.18:079][  0]LogMemory: Process Virtual Memory: 266.35 MB used, 266.35 MB peak
+[2017.08.06-02.08.18:079][  0]LogMemory: Physical Memory: 6840.89 MB used,  9428.13 MB free, 16269.02 MB total
+[2017.08.06-02.08.18:079][  0]LogMemory: Virtual Memory: 642.10 MB used,  9428.13 MB free, 134217728.00 MB total
+[2017.08.06-02.08.18:197][  0]LogInit: Using OS detected language (en-US).
+[2017.08.06-02.08.18:197][  0]LogInit: Using OS detected locale (en-US).
+[2017.08.06-02.08.18:201][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2017.08.06-02.08.19:644][  0]LogD3D11RHI: D3D11 adapters:
+[2017.08.06-02.08.19:652][  0]LogD3D11RHI:    0. 'Intel(R) Iris(TM) Plus Graphics 640' (Feature Level 11_0)
+[2017.08.06-02.08.19:652][  0]LogD3D11RHI:       128/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2017.08.06-02.08.19:654][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.08.06-02.08.19:654][  0]LogD3D11RHI:       0/0/8134 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.08.06-02.08.19:654][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.08.06-02.08.19:659][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.08.06-02.08.19:659][  0]LogD3D11RHI:     GPU DeviceId: 0x5926 (for the marketing name, search the web for "GPU Device Id")
+[2017.08.06-02.08.19:659][  0]LogWindows: EnumDisplayDevices:
+[2017.08.06-02.08.19:659][  0]LogWindows:    0. 'Intel(R) Iris(TM) Plus Graphics 640' (P:1 D:1)
+[2017.08.06-02.08.19:659][  0]LogWindows:    1. 'Intel(R) Iris(TM) Plus Graphics 640' (P:0 D:0)
+[2017.08.06-02.08.19:659][  0]LogWindows:    2. 'Intel(R) Iris(TM) Plus Graphics 640' (P:0 D:0)
+[2017.08.06-02.08.19:659][  0]LogWindows: DebugString: FoundDriverCount:3 
+[2017.08.06-02.08.19:659][  0]LogD3D11RHI:     Adapter Name: Intel(R) Iris(TM) Plus Graphics 640
+[2017.08.06-02.08.19:659][  0]LogD3D11RHI:   Driver Version: 21.20.16.4627 (internal:21.20.16.4627, unified:21.20.16.4627)
+[2017.08.06-02.08.19:659][  0]LogD3D11RHI:      Driver Date: 3-9-2017
+[2017.08.06-02.08.19:660][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.08.06-02.08.19:665][  0]LogD3D11RHI: Async texture creation enabled
+[2017.08.06-02.08.19:669][  0]LogD3D11RHI: GPU Timing Frequency: 12.000000 (Debug: 2 0)
+[2017.08.06-02.08.19:671][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Intermediate/Shaders/WorkingDirectory/6340/).
+[2017.08.06-02.08.19:671][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/g_mar/AppData/Local/Temp/UnrealShaderWorkingDir/F70539634A8DA10702AB7384A6AE01A1/'.
+[2017.08.06-02.08.19:671][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.08.06-02.08.21:142][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.08.06-02.08.21:205][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.08.06-02.08.21:259][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.08.06-02.08.21:314][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.08.06-02.08.21:376][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.08.06-02.08.21:424][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.08.06-02.08.21:472][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.08.06-02.08.21:523][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.08.06-02.08.21:563][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.08.06-02.08.21:616][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.08.06-02.08.21:669][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.08.06-02.08.21:725][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.08.06-02.08.21:794][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.08.06-02.08.21:852][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.08.06-02.08.21:910][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.08.06-02.08.22:017][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.08.06-02.08.22:017][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.08.06-02.08.22:062][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.08.06-02.08.22:172][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.08.06-02.08.22:203][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.08.06-02.08.22:256][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.08.06-02.08.22:320][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.08.06-02.08.22:384][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.08.06-02.08.22:449][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.08.06-02.08.22:449][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.08.06-02.08.22:974][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.08.06-02.08.23:072][  0]LogDerivedDataCache: Loaded boot cache 0.10s 90MB C:/Users/g_mar/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.06-02.08.23:072][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/g_mar/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.08.06-02.08.23:072][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.08.06-02.08.23:072][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.08.06-02.08.23:072][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.08.06-02.08.23:072][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.08.06-02.08.23:090][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.08.06-02.08.23:103][  0]LogDerivedDataCache: Using Local data cache path C:/Users/g_mar/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.08.06-02.08.23:112][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.08.06-02.08.23:113][  0]LogSlate: Using Freetype 2.6.0
+[2017.08.06-02.08.23:113][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.06-02.08.23:113][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.08.06-02.08.23:467][  0]LogInit: Selected Device Profile: [Windows]
+[2017.08.06-02.08.23:558][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.08.06-02.08.23:728][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.08.06-02.08.23:777][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.08.06-02.08.23:820][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.08.06-02.08.23:820][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.08.06-02.08.23:820][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.08.06-02.08.24:705][  0]LogNetVersion: MyProject , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 1111101373)
+[2017.08.06-02.08.24:818][  0]LogAssetRegistry: FAssetRegistry took 0.0317 seconds to start up
+[2017.08.06-02.08.24:927][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.048628 seconds
+[2017.08.06-02.08.24:935][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.08.06-02.08.24:935][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2017.08.06-02.08.24:935][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.08.06-02.08.25:018][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.08.06-02.08.28:365][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.08.06-02.08.28:418][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.08.06-02.08.29:311][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.08.06-02.08.30:377][  0]SourceControl: Info Source control is disabled
+[2017.08.06-02.08.30:378][  0]SourceControl: Info Source control is disabled
+[2017.08.06-02.08.30:461][  0]SourceControl: Info Source control is disabled
+[2017.08.06-02.08.30:547][  0]SourceControl: Info Source control is disabled
+[2017.08.06-02.08.32:036][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.08.06-02.08.33:117][  0]LogEngine: Initializing Engine...
+[2017.08.06-02.08.33:119][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.08.06-02.08.33:390][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.08.06-02.08.33:390][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.08.06-02.08.33:590][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.08.06-02.08.33:599][  0]LogInit: XAudio2 using 'スピーカー / ヘッドホン (Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.08.06-02.08.33:616][  0]LogInit: FAudioDevice initialized.
+[2017.08.06-02.08.33:685][  0]LogDerivedDataCache: Saved boot cache 0.07s 90MB C:/Users/g_mar/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.08.06-02.08.33:702][  0]LogInit: Texture streaming: Enabled
+[2017.08.06-02.08.33:877][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.08.06-02.08.34:193][  0]LogInit: Transaction tracking system initialized
+[2017.08.06-02.08.34:680][  0]BlueprintLog: New page: Editor Load
+[2017.08.06-02.08.36:387][  0]LocalizationService: Info Localization service is disabled
+[2017.08.06-02.08.37:535][  0]LogConsoleResponse:Display: 
+[2017.08.06-02.08.37:859][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.08.06-02.08.37:860][  0]LogCook:Display: Mobile HDR setting 1
+[2017.08.06-02.08.38:394][  0]LogFileCache: Scanning file cache for directory 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Content/' took 0.02s
+[2017.08.06-02.08.39:642][  0]SourceControl: Info Source control is disabled
+[2017.08.06-02.08.39:643][  0]Cmd: MAP LOAD FILE="../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/maps/world1.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.08.06-02.08.39:653][  0]LightingResults: New page: Lighting Build
+[2017.08.06-02.08.39:734][  0]MapCheck: New page: Map Check
+[2017.08.06-02.08.39:734][  0]LightingResults: New page: Lighting Build
+[2017.08.06-02.08.40:083][  0]LogAIModule: Creating AISystem for world world1
+[2017.08.06-02.08.40:096][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.08.06-02.08.40:141][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.08.06-02.08.40:234][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 92.597ms to complete.
+[2017.08.06-02.08.40:234][  0]LogFileHelpers: Loading map 'world1' took 0.591
+[2017.08.06-02.08.40:500][  0]LogCollectionManager: Loaded 0 collections in 0.002568 seconds
+[2017.08.06-02.08.40:637][  0]LogFileCache: Scanning file cache for directory 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Collections/' took 0.01s
+[2017.08.06-02.08.40:637][  0]LogFileCache: Scanning file cache for directory 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Content/Developers/gmar/Collections/' took 0.01s
+[2017.08.06-02.08.40:637][  0]LogFileCache: Scanning file cache for directory 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Content/Collections/' took 0.01s
+[2017.08.06-02.08.40:637][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.08.06-02.08.40:652][  0]LogContentBrowser: Native class hierarchy populated in 0.0115 seconds. Added 2329 classes and 491 folders.
+[2017.08.06-02.08.40:778][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.08.06-02.08.41:326][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0009 seconds. Added 0 classes and 0 folders.
+[2017.08.06-02.08.41:395][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0010 seconds. Added 1 classes and 2 folders.
+[2017.08.06-02.08.41:506][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.08.06-02.08.41:517][  0]LogSlate: Took 0.000340 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.06-02.08.41:519][  0]LogSlate: Took 0.000191 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.08.06-02.08.41:544][  0]LogSlate: Took 0.011743 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.08.06-02.08.41:696][  0]LogRenderer: Reallocating scene render targets to support 1004x456 NumSamples 1 (Frame:1).
+[2017.08.06-02.08.43:185][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.08.06-02.08.43:301][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0010 seconds. Added 1 classes and 2 folders.
+[2017.08.06-02.08.43:301][  0]LogLoad: (Engine Initialization) Total time: 28.10 seconds
+[2017.08.06-02.08.43:302][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.14 seconds
+[2017.08.06-02.08.43:302][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2017.08.06-02.08.43:646][  0]LogOcInput: OculusInput pre-init called
+[2017.08.06-02.08.43:646][  0]LogHMD: Starting GearVRController plugin
+[2017.08.06-02.08.43:682][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.08.06-02.08.44:131][  1]LogSlate: Took 0.007185 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.06-02.08.44:977][  4]LogAssetRegistry: Asset discovery search completed in 20.1816 seconds
+[2017.08.06-02.08.44:979][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.08.06-02.08.44:979][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000045 seconds (updated 0 objects)
+[2017.08.06-02.10.21:136][329]LogSlate: Took 0.000172 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.06-02.10.21:149][329]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 ../../../../../../Users/g_mar/Downloads/Character.png)
+[2017.08.06-02.10.21:156][329]LogTexture:Display: Building textures: Character (AutoDXT, 256X256)
+[2017.08.06-02.10.58:170][647]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2017.08.06-02.11.32:390][ 51]LogSlate: Took 0.012626 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.08.06-02.12.54:194][834]LogTexture:Display: Building textures: Character (BGRA8, 256X256)
+[2017.08.06-02.13.46:267][270]LogRenderer: Reallocating scene render targets to support 1272x740 NumSamples 1 (Frame:90).
+[2017.08.06-02.13.52:776][345]Cmd: MODE GRID=0
+[2017.08.06-02.13.53:789][362]Cmd: MODE GRID=1
+[2017.08.06-02.18.34:999][717]LogSlate: Took 0.000844 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.08.06-02.18.43:779][862]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/MegaClone/maps/world1' took 0.052
+[2017.08.06-02.18.43:783][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character] ([1] browsable assets)...
+[2017.08.06-02.18.43:809][862]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/MegaClone/sprite/character/Character.Character]
+[2017.08.06-02.18.43:809][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character]
+[2017.08.06-02.18.43:839][862]LogSavePackage: Save=25.17ms
+[2017.08.06-02.18.43:839][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Auto187BE05F64407BEAA0EC72CB58A81FDCB.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Auto1.uasset'
+[2017.08.06-02.18.43:841][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Auto1.uasset
+[2017.08.06-02.18.43:842][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_0] ([1] browsable assets)...
+[2017.08.06-02.18.43:865][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_0.Character_Sprite_0]
+[2017.08.06-02.18.43:865][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_0]
+[2017.08.06-02.18.43:888][862]LogSavePackage: Save=18.81ms
+[2017.08.06-02.18.43:888][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_0_Auto12D8CE1DB43915C229676E5A47B22817B.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_0_Auto1.uasset'
+[2017.08.06-02.18.43:890][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_0_Auto1.uasset
+[2017.08.06-02.18.43:892][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_1] ([1] browsable assets)...
+[2017.08.06-02.18.43:916][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_1.Character_Sprite_1]
+[2017.08.06-02.18.43:916][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_1]
+[2017.08.06-02.18.43:940][862]LogSavePackage: Save=19.34ms
+[2017.08.06-02.18.43:940][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_1_Auto14A06541246A63C61B0EE0182C02621F7.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_1_Auto1.uasset'
+[2017.08.06-02.18.43:945][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_1_Auto1.uasset
+[2017.08.06-02.18.43:946][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_2] ([1] browsable assets)...
+[2017.08.06-02.18.43:969][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_2.Character_Sprite_2]
+[2017.08.06-02.18.43:969][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_2]
+[2017.08.06-02.18.43:995][862]LogSavePackage: Save=21.45ms
+[2017.08.06-02.18.43:995][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_2_Auto11871F88D4AF6070BB9261CBAA538DBE9.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_2_Auto1.uasset'
+[2017.08.06-02.18.43:999][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_2_Auto1.uasset
+[2017.08.06-02.18.44:001][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_3] ([1] browsable assets)...
+[2017.08.06-02.18.44:024][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_3.Character_Sprite_3]
+[2017.08.06-02.18.44:024][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_3]
+[2017.08.06-02.18.44:043][862]LogSavePackage: Save=11.46ms
+[2017.08.06-02.18.44:043][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_3_Auto1AEA0EAA44B0D86B39D25BBA55B09CB49.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_3_Auto1.uasset'
+[2017.08.06-02.18.44:045][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_3_Auto1.uasset
+[2017.08.06-02.18.44:045][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_4] ([1] browsable assets)...
+[2017.08.06-02.18.44:061][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_4.Character_Sprite_4]
+[2017.08.06-02.18.44:061][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_4]
+[2017.08.06-02.18.44:076][862]LogSavePackage: Save=11.38ms
+[2017.08.06-02.18.44:076][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_4_Auto1D6169C5B4B48FFE48A040A8381906032.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_4_Auto1.uasset'
+[2017.08.06-02.18.44:078][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_4_Auto1.uasset
+[2017.08.06-02.18.44:079][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_5] ([1] browsable assets)...
+[2017.08.06-02.18.44:093][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_5.Character_Sprite_5]
+[2017.08.06-02.18.44:093][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_5]
+[2017.08.06-02.18.44:109][862]LogSavePackage: Save=11.43ms
+[2017.08.06-02.18.44:109][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_5_Auto10A551DEA4C0CFF00F25DAB9FD60BB9D0.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_5_Auto1.uasset'
+[2017.08.06-02.18.44:111][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_5_Auto1.uasset
+[2017.08.06-02.18.44:112][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_6] ([1] browsable assets)...
+[2017.08.06-02.18.44:125][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_6.Character_Sprite_6]
+[2017.08.06-02.18.44:125][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_6]
+[2017.08.06-02.18.44:143][862]LogSavePackage: Save=11.14ms
+[2017.08.06-02.18.44:143][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_6_Auto1A1796EF44648FF8AE1C80CABAE471E42.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_6_Auto1.uasset'
+[2017.08.06-02.18.44:145][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_6_Auto1.uasset
+[2017.08.06-02.18.44:145][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_7] ([1] browsable assets)...
+[2017.08.06-02.18.44:161][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_7.Character_Sprite_7]
+[2017.08.06-02.18.44:161][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_7]
+[2017.08.06-02.18.44:177][862]LogSavePackage: Save=11.09ms
+[2017.08.06-02.18.44:177][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_7_Auto1876E5D8D424E135DDD5E1D9487CDADA6.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_7_Auto1.uasset'
+[2017.08.06-02.18.44:179][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_7_Auto1.uasset
+[2017.08.06-02.18.44:180][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_8] ([1] browsable assets)...
+[2017.08.06-02.18.44:194][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_8.Character_Sprite_8]
+[2017.08.06-02.18.44:194][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_8]
+[2017.08.06-02.18.44:211][862]LogSavePackage: Save=12.74ms
+[2017.08.06-02.18.44:212][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_8_Auto1B818B865446700AF0F2DF5AE1CB1D034.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_8_Auto1.uasset'
+[2017.08.06-02.18.44:214][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_8_Auto1.uasset
+[2017.08.06-02.18.44:214][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_9] ([1] browsable assets)...
+[2017.08.06-02.18.44:230][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_9.Character_Sprite_9]
+[2017.08.06-02.18.44:230][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_9]
+[2017.08.06-02.18.44:244][862]LogSavePackage: Save=11.37ms
+[2017.08.06-02.18.44:244][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_9_Auto18C4F03194BB3406693F5F291E812DC42.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_9_Auto1.uasset'
+[2017.08.06-02.18.44:246][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_9_Auto1.uasset
+[2017.08.06-02.18.44:247][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_10] ([1] browsable assets)...
+[2017.08.06-02.18.44:262][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_10.Character_Sprite_10]
+[2017.08.06-02.18.44:263][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_10]
+[2017.08.06-02.18.44:279][862]LogSavePackage: Save=13.82ms
+[2017.08.06-02.18.44:279][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_10_Auto14924BE0F4B389C077B91E2B72DB2CF87.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_10_Auto1.uasset'
+[2017.08.06-02.18.44:281][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_10_Auto1.uasset
+[2017.08.06-02.18.44:282][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_11] ([1] browsable assets)...
+[2017.08.06-02.18.44:298][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_11.Character_Sprite_11]
+[2017.08.06-02.18.44:298][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_11]
+[2017.08.06-02.18.44:312][862]LogSavePackage: Save=11.18ms
+[2017.08.06-02.18.44:312][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_11_Auto1E28080A3425BC4E688036185A4E9CAC6.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_11_Auto1.uasset'
+[2017.08.06-02.18.44:314][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_11_Auto1.uasset
+[2017.08.06-02.18.44:315][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_12] ([1] browsable assets)...
+[2017.08.06-02.18.44:330][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_12.Character_Sprite_12]
+[2017.08.06-02.18.44:330][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_12]
+[2017.08.06-02.18.44:344][862]LogSavePackage: Save=11.19ms
+[2017.08.06-02.18.44:344][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_12_Auto17DCFEEBF4BF89606AF110195A426D2F2.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_12_Auto1.uasset'
+[2017.08.06-02.18.44:345][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_12_Auto1.uasset
+[2017.08.06-02.18.44:346][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_13] ([1] browsable assets)...
+[2017.08.06-02.18.44:362][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_13.Character_Sprite_13]
+[2017.08.06-02.18.44:362][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_13]
+[2017.08.06-02.18.44:377][862]LogSavePackage: Save=12.58ms
+[2017.08.06-02.18.44:377][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_13_Auto122AD84104E75C15B391E5692CD4385DC.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_13_Auto1.uasset'
+[2017.08.06-02.18.44:379][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_13_Auto1.uasset
+[2017.08.06-02.18.44:380][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_14] ([1] browsable assets)...
+[2017.08.06-02.18.44:395][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_14.Character_Sprite_14]
+[2017.08.06-02.18.44:395][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_14]
+[2017.08.06-02.18.44:417][862]LogSavePackage: Save=15.68ms
+[2017.08.06-02.18.44:418][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_14_Auto1C0268CCD43413406EBD98EBA7541B38F.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_14_Auto1.uasset'
+[2017.08.06-02.18.44:420][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_14_Auto1.uasset
+[2017.08.06-02.18.44:421][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_15] ([1] browsable assets)...
+[2017.08.06-02.18.44:437][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_15.Character_Sprite_15]
+[2017.08.06-02.18.44:437][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_15]
+[2017.08.06-02.18.44:451][862]LogSavePackage: Save=11.16ms
+[2017.08.06-02.18.44:451][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_15_Auto11C1640704F5A522C3A43E2B46CA768A4.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_15_Auto1.uasset'
+[2017.08.06-02.18.44:453][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_15_Auto1.uasset
+[2017.08.06-02.18.44:454][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_16] ([1] browsable assets)...
+[2017.08.06-02.18.44:469][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_16.Character_Sprite_16]
+[2017.08.06-02.18.44:469][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_16]
+[2017.08.06-02.18.44:483][862]LogSavePackage: Save=11.26ms
+[2017.08.06-02.18.44:483][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_16_Auto1BF9222634194DDA9847E66B0B8C1794D.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_16_Auto1.uasset'
+[2017.08.06-02.18.44:485][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_16_Auto1.uasset
+[2017.08.06-02.18.44:486][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_17] ([1] browsable assets)...
+[2017.08.06-02.18.44:502][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_17.Character_Sprite_17]
+[2017.08.06-02.18.44:502][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_17]
+[2017.08.06-02.18.44:518][862]LogSavePackage: Save=13.27ms
+[2017.08.06-02.18.44:518][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_17_Auto12F98D22344A1E7F47CB9BAA60E5A52AD.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_17_Auto1.uasset'
+[2017.08.06-02.18.44:519][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_17_Auto1.uasset
+[2017.08.06-02.18.44:520][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_18] ([1] browsable assets)...
+[2017.08.06-02.18.44:536][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_18.Character_Sprite_18]
+[2017.08.06-02.18.44:536][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_18]
+[2017.08.06-02.18.44:550][862]LogSavePackage: Save=11.34ms
+[2017.08.06-02.18.44:550][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_18_Auto167341EB5413C1D5D70FE5EB7754DCE26.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_18_Auto1.uasset'
+[2017.08.06-02.18.44:552][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_18_Auto1.uasset
+[2017.08.06-02.18.44:553][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_19] ([1] browsable assets)...
+[2017.08.06-02.18.44:569][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_19.Character_Sprite_19]
+[2017.08.06-02.18.44:569][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_19]
+[2017.08.06-02.18.44:585][862]LogSavePackage: Save=11.29ms
+[2017.08.06-02.18.44:585][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_19_Auto1FB215C7841FCCB8322312F97125B0859.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_19_Auto1.uasset'
+[2017.08.06-02.18.44:587][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_19_Auto1.uasset
+[2017.08.06-02.18.44:588][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_20] ([1] browsable assets)...
+[2017.08.06-02.18.44:605][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_20.Character_Sprite_20]
+[2017.08.06-02.18.44:605][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_20]
+[2017.08.06-02.18.44:636][862]LogSavePackage: Save=25.99ms
+[2017.08.06-02.18.44:636][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_20_Auto1584969F74582DCC905E8F185C4EB00A8.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_20_Auto1.uasset'
+[2017.08.06-02.18.44:638][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_20_Auto1.uasset
+[2017.08.06-02.18.44:638][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_21] ([1] browsable assets)...
+[2017.08.06-02.18.44:652][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_21.Character_Sprite_21]
+[2017.08.06-02.18.44:652][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_21]
+[2017.08.06-02.18.44:668][862]LogSavePackage: Save=13.86ms
+[2017.08.06-02.18.44:668][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_21_Auto1E2AE64274BC1806D45519AB6FDA88006.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_21_Auto1.uasset'
+[2017.08.06-02.18.44:671][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_21_Auto1.uasset
+[2017.08.06-02.18.44:671][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_22] ([1] browsable assets)...
+[2017.08.06-02.18.44:684][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_22.Character_Sprite_22]
+[2017.08.06-02.18.44:684][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_22]
+[2017.08.06-02.18.44:701][862]LogSavePackage: Save=13.79ms
+[2017.08.06-02.18.44:701][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_22_Auto19D18858B4BA064B669A892B72B4EC828.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_22_Auto1.uasset'
+[2017.08.06-02.18.44:703][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_22_Auto1.uasset
+[2017.08.06-02.18.44:704][862]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MegaClone/sprite/character/Character_Sprite_23] ([1] browsable assets)...
+[2017.08.06-02.18.44:716][862]OBJ SavePackage:     Rendered thumbnail for [PaperSprite /Game/MegaClone/sprite/character/Character_Sprite_23.Character_Sprite_23]
+[2017.08.06-02.18.44:716][862]OBJ SavePackage: Finished generating thumbnails for package [/Game/MegaClone/sprite/character/Character_Sprite_23]
+[2017.08.06-02.18.44:735][862]LogSavePackage: Save=16.11ms
+[2017.08.06-02.18.44:736][862]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_23_Auto1595E642B4AB76AD567CA13A2BD51229C.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_23_Auto1.uasset'
+[2017.08.06-02.18.44:738][862]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Autosaves/Game/MegaClone/sprite/character/Character_Sprite_23_Auto1.uasset
+[2017.08.06-02.18.44:738][862]LogFileHelpers: Auto-saving content packages took 0.958
+[2017.08.06-02.18.44:739][862]LogSlate: Took 0.000329 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.08.06-02.18.55:334][ 27]LogSavePackage: Save=14.04ms
+[2017.08.06-02.18.55:334][ 27]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_0C4032B8542E753D643BA74B787123A48.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_0.uasset'
+[2017.08.06-02.18.55:347][ 27]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_0.uasset
+[2017.08.06-02.20.01:290][886]LogSavePackage: Save=9.88ms
+[2017.08.06-02.20.01:290][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_0431692894E80A8E67425F38245B9FD89.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_0.uasset'
+[2017.08.06-02.20.01:292][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_0.uasset
+[2017.08.06-02.20.01:337][886]LogSavePackage: Save=13.37ms
+[2017.08.06-02.20.01:337][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_15F7C92B948FC30DF92A8F5B942D31F95.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_1.uasset'
+[2017.08.06-02.20.01:353][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_1.uasset
+[2017.08.06-02.20.01:388][886]LogSavePackage: Save=12.74ms
+[2017.08.06-02.20.01:388][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_210F0DB454DA43D8A8DF39E8F858AABDC.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_2.uasset'
+[2017.08.06-02.20.01:402][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_2.uasset
+[2017.08.06-02.20.01:437][886]LogSavePackage: Save=12.73ms
+[2017.08.06-02.20.01:437][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_3F825DA4540E04509D4DE4890259E28E5.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_3.uasset'
+[2017.08.06-02.20.01:446][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_3.uasset
+[2017.08.06-02.20.01:486][886]LogSavePackage: Save=13.63ms
+[2017.08.06-02.20.01:486][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_46BC6B70B476C1489015673BCE9A93198.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_4.uasset'
+[2017.08.06-02.20.01:495][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_4.uasset
+[2017.08.06-02.20.01:531][886]LogSavePackage: Save=9.62ms
+[2017.08.06-02.20.01:532][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_51AB23B2D477319C6CDA75189256F64B2.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_5.uasset'
+[2017.08.06-02.20.01:543][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_5.uasset
+[2017.08.06-02.20.01:575][886]LogSavePackage: Save=9.27ms
+[2017.08.06-02.20.01:575][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_63682B4944F294439F0A3399BDF607839.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_6.uasset'
+[2017.08.06-02.20.01:588][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_6.uasset
+[2017.08.06-02.20.01:622][886]LogSavePackage: Save=12.94ms
+[2017.08.06-02.20.01:622][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_7934DE43D4C5A3C171ECBCFB1EE70279D.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_7.uasset'
+[2017.08.06-02.20.01:633][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_7.uasset
+[2017.08.06-02.20.01:664][886]LogSavePackage: Save=9.71ms
+[2017.08.06-02.20.01:664][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_8DA84128F43C611EDEDBFAB8BD5F9153A.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_8.uasset'
+[2017.08.06-02.20.01:674][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_8.uasset
+[2017.08.06-02.20.01:706][886]LogSavePackage: Save=9.71ms
+[2017.08.06-02.20.01:706][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_9A2AF9F614D86CF35580C3E9D97C93BB2.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_9.uasset'
+[2017.08.06-02.20.01:721][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_9.uasset
+[2017.08.06-02.20.01:747][886]LogSavePackage: Save=9.05ms
+[2017.08.06-02.20.01:747][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_1006A7B16B4A1274F44D4C82B283773DBD.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_10.uasset'
+[2017.08.06-02.20.01:762][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_10.uasset
+[2017.08.06-02.20.01:789][886]LogSavePackage: Save=11.99ms
+[2017.08.06-02.20.01:789][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_11892942F642EBF51BECD5A69A87739C74.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_11.uasset'
+[2017.08.06-02.20.01:798][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_11.uasset
+[2017.08.06-02.20.01:829][886]LogSavePackage: Save=15.45ms
+[2017.08.06-02.20.01:829][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_12677969D74AF92A787108B6BBEF817074.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_12.uasset'
+[2017.08.06-02.20.01:837][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_12.uasset
+[2017.08.06-02.20.01:864][886]LogSavePackage: Save=8.24ms
+[2017.08.06-02.20.01:864][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_13C958B32E4AABF5CBA03292B97F009E9D.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_13.uasset'
+[2017.08.06-02.20.01:873][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_13.uasset
+[2017.08.06-02.20.01:900][886]LogSavePackage: Save=7.52ms
+[2017.08.06-02.20.01:900][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_142CA323D44A3F707F660891A4569DC728.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_14.uasset'
+[2017.08.06-02.20.01:908][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_14.uasset
+[2017.08.06-02.20.01:935][886]LogSavePackage: Save=7.56ms
+[2017.08.06-02.20.01:935][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_151C7167FD4FDAC29D05F1FAB4E5162FAA.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_15.uasset'
+[2017.08.06-02.20.01:942][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_15.uasset
+[2017.08.06-02.20.01:973][886]LogSavePackage: Save=8.12ms
+[2017.08.06-02.20.01:973][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_160BAB5A804FE1298A0FB8998459BE989B.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_16.uasset'
+[2017.08.06-02.20.01:988][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_16.uasset
+[2017.08.06-02.20.02:013][886]LogSavePackage: Save=8.45ms
+[2017.08.06-02.20.02:013][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_17F5D76A6F4DCF9D3E56D56FBA7D1A9FA8.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_17.uasset'
+[2017.08.06-02.20.02:027][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_17.uasset
+[2017.08.06-02.20.02:055][886]LogSavePackage: Save=13.04ms
+[2017.08.06-02.20.02:055][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_183731FA1648A942EC7F03AD9CDF7DB236.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_18.uasset'
+[2017.08.06-02.20.02:064][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_18.uasset
+[2017.08.06-02.20.02:092][886]LogSavePackage: Save=14.44ms
+[2017.08.06-02.20.02:093][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_1935FA87DC4FA21820AD20FEA366E42167.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_19.uasset'
+[2017.08.06-02.20.02:101][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_19.uasset
+[2017.08.06-02.20.02:131][886]LogSavePackage: Save=9.55ms
+[2017.08.06-02.20.02:131][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_207486F54940336566586EC39E7BEF8149.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_20.uasset'
+[2017.08.06-02.20.02:140][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_20.uasset
+[2017.08.06-02.20.02:171][886]LogSavePackage: Save=9.55ms
+[2017.08.06-02.20.02:171][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_211C7CD6794BCC6268EE4D94B289B0AF54.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_21.uasset'
+[2017.08.06-02.20.02:179][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_21.uasset
+[2017.08.06-02.20.02:206][886]LogSavePackage: Save=7.62ms
+[2017.08.06-02.20.02:206][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_224205B2C748F9AB60093CD6B6EB61FBB2.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_22.uasset'
+[2017.08.06-02.20.02:221][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_22.uasset
+[2017.08.06-02.20.02:247][886]LogSavePackage: Save=8.24ms
+[2017.08.06-02.20.02:247][886]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character_Sprite_23FAE0B42349585E4EBBF2728B3525CBE3.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_23.uasset'
+[2017.08.06-02.20.02:257][886]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character_Sprite_23.uasset
+[2017.08.06-02.24.13:667][794]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MegaClone/sprite/character/aRun" FILE="../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/aRun.uasset" SILENT=true
+[2017.08.06-02.24.13:681][794]LogSavePackage: Save=10.93ms
+[2017.08.06-02.24.13:681][794]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/aRun837B73B3429BF67627EF279FD3C37A5B.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/aRun.uasset'
+[2017.08.06-02.24.13:685][794]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/aRun.uasset
+[2017.08.06-02.25.47:833][139]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.08.06-02.25.47:917][139]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2017.08.06-02.26.04:056][394]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0008 seconds. Added 112 classes and 0 folders.
+[2017.08.06-02.26.05:200][395]LogSlate: Took 0.010858 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.08.06-02.27.41:607][714]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MegaClone/blueprint/megaCloneBP" FILE="../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/blueprint/megaCloneBP.uasset" SILENT=true
+[2017.08.06-02.27.41:742][714]LogSavePackage: Save=122.57ms
+[2017.08.06-02.27.41:742][714]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/megaCloneBPC21AD41A41805936A799B2A5CDD34F6C.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/blueprint/megaCloneBP.uasset'
+[2017.08.06-02.27.41:748][714]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/blueprint/megaCloneBP.uasset
+[2017.08.06-02.27.46:787][768]LogSavePackage: Save=16.64ms
+[2017.08.06-02.27.46:787][768]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/aStance4FFD65074E459CB8E4B239B2BDEEB62D.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/aStance.uasset'
+[2017.08.06-02.27.46:790][768]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/aStance.uasset
+[2017.08.06-02.27.46:821][768]LogSavePackage: Save=13.86ms
+[2017.08.06-02.27.46:821][768]LogSavePackage: Moving '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Character035137914321EA1CECDBC0B591539606.tmp' to '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character.uasset'
+[2017.08.06-02.27.46:824][768]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/MegaClone/sprite/character/Character.uasset
+[2017.08.06-02.27.47:229][769]Cmd: QUIT_EDITOR
+[2017.08.06-02.27.47:301][769]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2017.08.06-02.27.47:312][769]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2017.08.06-02.27.47:351][769]LogExit: Preparing to exit.
+[2017.08.06-02.27.48:193][769]LogDirectoryWatcher: A directory notification failed for 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Content/', and we were unable to create a new request.
+[2017.08.06-02.27.48:324][769]LogExit: Editor shut down
+[2017.08.06-02.27.48:336][769]LogExit: Transaction tracking system shut down
+[2017.08.06-02.27.48:438][769]LogObj: Freed 0b from 0 cluster array pools.
+[2017.08.06-02.27.48:438][769]LogExit: Object subsystem successfully closed.
+[2017.08.06-02.27.48:456][769]LogD3D11RHI: Shutdown
+[2017.08.06-02.27.48:456][769]LogD3D11RHI: CleanupD3DDevice
+[2017.08.06-02.27.48:580][769]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.08.06-02.27.48:593][769]LogModuleManager: Shutting down and abandoning module BlueprintGraph (530)
+[2017.08.06-02.27.48:593][769]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (528)
+[2017.08.06-02.27.48:594][769]LogModuleManager: Shutting down and abandoning module TextureEditor (526)
+[2017.08.06-02.27.48:594][769]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.08.06-02.27.48:594][769]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.08.06-02.27.48:594][769]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.08.06-02.27.48:594][769]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.08.06-02.27.48:594][769]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.08.06-02.27.48:595][769]LogDirectoryWatcher: A directory notification for 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Content/Collections/' was aborted.
+[2017.08.06-02.27.48:595][769]LogDirectoryWatcher: A directory notification for 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Content/Developers/gmar/Collections/' was aborted.
+[2017.08.06-02.27.48:595][769]LogDirectoryWatcher: A directory notification for 'C:/Users/g_mar/Documents/Unreal Projects/MyProject/Saved/Collections/' was aborted.
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.08.06-02.27.48:595][769]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.08.06-02.27.49:500][769]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.08.06-02.27.49:500][769]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.08.06-02.27.49:500][769]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.08.06-02.27.49:501][769]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.08.06-02.27.49:555][769]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.08.06-02.27.49:555][769]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.08.06-02.27.49:555][769]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.08.06-02.27.49:555][769]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.08.06-02.27.49:555][769]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.08.06-02.27.49:555][769]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.08.06-02.27.49:555][769]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.08.06-02.27.49:556][769]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.08.06-02.27.49:556][769]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.08.06-02.27.49:556][769]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.08.06-02.27.49:576][769]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.08.06-02.27.49:577][769]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.08.06-02.27.49:577][769]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.08.06-02.27.49:577][769]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.08.06-02.27.49:577][769]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.08.06-02.27.49:589][769]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.08.06-02.27.49:590][769]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.08.06-02.27.49:593][769]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.08.06-02.27.49:593][769]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.08.06-02.27.49:593][769]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.08.06-02.27.49:594][769]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.08.06-02.27.49:594][769]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.08.06-02.27.49:594][769]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.08.06-02.27.49:594][769]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.08.06-02.27.49:594][769]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.08.06-02.27.49:594][769]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.08.06-02.27.49:695][769]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.08.06-02.27.49:796][769]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.08.06-02.27.49:796][769]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.08.06-02.27.49:796][769]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.08.06-02.27.49:796][769]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.08.06-02.27.49:796][769]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.08.06-02.27.49:796][769]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.08.06-02.27.49:799][769]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.08.06-02.27.49:799][769]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.08.06-02.27.49:799][769]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.08.06-02.27.49:799][769]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.08.06-02.27.49:800][769]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.08.06-02.27.49:801][769]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.08.06-02.27.49:812][769]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.08.06-02.27.49:812][769]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.08.06-02.27.49:812][769]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.08.06-02.27.49:812][769]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.08.06-02.27.49:812][769]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.08.06-02.27.49:812][769]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.08.06-02.27.50:033][769]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.08.06-02.27.50:033][769]LogDirectoryWatcher: A directory notification for '../../../../../../Users/g_mar/Documents/Unreal Projects/MyProject/Content/' was aborted.
+[2017.08.06-02.27.50:034][769]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.08.06-02.27.50:034][769]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.08.06-02.27.50:044][769]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.08.06-02.27.50:047][769]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.08.06-02.27.50:130][769]LogDerivedDataCache: Shutdown
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.08.06-02.27.50:130][769]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.08.06-02.27.50:131][769]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.08.06-02.27.50:133][769]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.08.06-02.27.50:133][769]LogOnline:Display: Unloading online subsystem: NULL
+[2017.08.06-02.27.50:134][769]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.08.06-02.27.50:134][769]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.08.06-02.27.50:134][769]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.08.06-02.27.50:134][769]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BAF4ADE80-4CCA-3416-BC20-2FA7E084C8D9%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=73ebde9c409d28a66e9c2fa0afe9acd3%7C7ede5d60e786428e891c93859a70d13b%7Cd1ad5f94-a313-4462-b3b3-1e399cc84ccc&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.08.06-02.27.50:157][769]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.08.06-02.27.50:163][769]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.08.06-02.27.50:163][769]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.08.06-02.27.50:163][769]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.08.06-02.27.50:163][769]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.08.06-02.27.50:163][769]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.08.06-02.27.50:163][769]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.08.06-02.27.50:164][769]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.08.06-02.27.50:164][769]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.08.06-02.27.50:169][769]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.08.06-02.27.50:174][769]LogExit: Exiting.
+[2017.08.06-02.27.50:226][769]Log file closed, 08/06/17 11:27:50
